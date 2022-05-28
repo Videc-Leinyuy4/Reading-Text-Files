@@ -4,7 +4,10 @@
 # --> {"cake":2, "big":1, "is":2, "the":1, "a":1, "it":1}
 
 def read_file_content(filename):
-    # [assignment] Add your code here 
+    with open("./story.txt" ,"r") as openfile:
+        read_file= openfile.read()
+        print(read_file)
+        print("This file is available")
     
     return "Hello World"
 
